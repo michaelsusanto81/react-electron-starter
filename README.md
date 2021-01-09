@@ -2,7 +2,7 @@
 A starter kit to build Desktop Application with React.js + Electron.js.
 
 ## How to run
-* Clone this repository.
+* Fork/Clone this repository.
 ```cmd
 git clone https://github.com/michaelsusanto81/react-electron-starter.git
 ```
