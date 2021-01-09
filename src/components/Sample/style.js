@@ -1,5 +1,5 @@
 import styled from 'styled-components';
 
-export const SampleText = styled.h1`
+export const SampleContainer = styled.div`
     text-align: center;
 `;

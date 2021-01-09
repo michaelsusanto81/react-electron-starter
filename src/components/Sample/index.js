@@ -1,14 +1,21 @@
 import React from 'react';
-import { SampleText } from './style';
+import { SampleContainer } from './style';
+import { Link } from "react-router-dom";
 
 export const Sample = () => {
     return (
-        <SampleText>React Electron Starter</SampleText>
+        <SampleContainer>
+            <h1>React Electron Starter</h1>            
+            <Link to="/sampleTwo">Sample Two</Link>
+        </SampleContainer>
     )
 }
 
 export const SampleTwo = () => {
     return (
-        <SampleText>React Electron Starter page Two</SampleText>
+        <SampleContainer>
+            <h1>React Electron Starter page Two</h1>
+            <Link to="/">Back</Link>
+        </SampleContainer>
     )
 }
