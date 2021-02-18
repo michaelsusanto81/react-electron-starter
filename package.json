@@ -1,66 +1,25 @@
 {
-  "name": "react-electron-starter",
+  "name": "react-starter",
   "author": "Michael Susanto",
-  "description": "React Electron Starter Kit",
-  "homepage": "./",
-  "main": "public/electron.js",
+  "description": "React Starter Kit",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.8",
     "@testing-library/react": "^11.2.3",
     "@testing-library/user-event": "^12.6.0",
-    "concurrently": "^5.3.0",
-    "electron-is-dev": "^1.2.0",
+    "axios": "^0.21.1",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "react-router-dom": "^5.2.0",
     "react-scripts": "4.0.1",
-    "styled-components": "^5.1.1",
-    "wait-on": "^5.2.1"
+    "styled-components": "^5.1.1"
   },
   "scripts": {
-    "dev": "concurrently \"npm start\" \"wait-on http://localhost:3000 && electron .\"",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "ebuild": "npm run build && node_modules/.bin/build",
-    "build-installer": "npm run build && electron-builder",
-    "electron-pack": "build --em.main=build/electron.js"
-  },
-  "build": {
-    "appId": "react-electron-starter",
-    "files": [
-      "build/**/*",
-      "node_modules/**/*"
-    ],
-    "win": {
-      "target": [
-        "nsis"
-      ],
-      "icon": "public/favicon.ico",
-      "requestedExecutionLevel": "requireAdministrator"
-    },
-    "nsis": {
-      "installerIcon": "public/favicon.ico",
-      "uninstallerIcon": "public/favicon.ico",
-      "uninstallDisplayName": "React Electron Starter",
-      "license": "license.txt",
-      "oneClick": false,
-      "allowToChangeInstallationDirectory": true,
-      "allowElevation": true
-    },
-    "mac": {
-      "target": [
-        "default"
-      ]
-    },
-    "linux": {
-      "target": [
-        "tar.gz"
-      ]
-    }
+    "eject": "react-scripts eject"
   },
   "eslintConfig": {
     "extends": [
@@ -79,9 +38,5 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  },
-  "devDependencies": {
-    "electron": "^11.1.1",
-    "electron-builder": "^22.9.1"
   }
 }

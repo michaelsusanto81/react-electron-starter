@@ -1,6 +1,6 @@
 import React from 'react';
 import AppContext from '../../context';
-import { HashRouter as Router, Switch, Route } from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import { routes } from "./routes";
 
 const App = () => {

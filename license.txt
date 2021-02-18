@@ -1,2 +1,0 @@
-React Electron Starter License
-by: Michael Susanto
